@@ -1,0 +1,305 @@
+[
+  {
+    "id": 1,
+    "product_name": "eu eros",
+    "product_colors": [{
+			"color_name": "blue",
+			"color_code": "#0000FF"
+		  },
+		  {
+			"color_name": "brown",
+			"color_code": "#A52A2A"
+		  },
+		  {
+			"color_name": "chocolate",
+			"color_code": "#D2691E"
+		  }]
+    , "product_size": 
+		  {
+			"Width": 7,
+			"Height": 27,
+			"Depth": 43
+		  },
+    "product_description": "Open and other replacement of unspecified heart valve",
+    "product_price": "57.06",
+    "product_materials": "Clothing"
+  },
+  {
+    "id": 2,
+    "product_name": "lacus Etiam",
+    "product_colors": [{
+			"color_name": "color_name",
+			"color_code": "color_code"
+		  },
+		  {
+			"color_name": "coral",
+			"color_code": "#FF7F50"
+		  }]
+    , "product_size": {
+		"Width": 8,
+		"Height": 20,
+		"Depth": 61
+	  },
+    "product_description": "Diagnostic procedures on bone, not elsewhere classified, carpals and metacarpals",
+    "product_price": "42.28",
+    "product_materials": "Toys"
+  },
+  {
+    "id": 3,
+    "product_name": "nibh vulputate",
+    "product_colors": [{
+			"color_name": "cornflowerblue",
+			"color_code": "#6495ED"
+		  }]
+    , "product_size": {
+		"Width": 1,
+		"Height": 29,
+		"Depth": 28
+	  }
+    "product_description": "Transplant from live related donor",
+    "product_price": "33.94",
+    "product_materials": "Beauty"
+  },
+  {
+    "id": 4,
+    "product_name": "aenean eget",
+    "product_colors": [{
+			"color_name": "crimson",
+			"color_code": "#DC143C"
+		  },
+		  {
+			"color_name": "darkblue",
+			"color_code": "#00008B"
+		  },
+		  {
+			"color_name": "darkorange",
+			"color_code": "#FF8C00"
+		  }]
+    , "product_size": {
+		"Width": 1,
+		"Height": 20,
+		"Depth": 41
+	  },
+    "product_description": "Extracorporeal shockwave lithotripsy of other sites",
+    "product_price": "77.76",
+    "product_materials": [{"color_name": "green", "color_code":"#008000"}]
+  },
+  {
+    "id": 5,
+    "product_name": "elit Aliquam",
+			"product_colors": [{
+			"color_name": "darkred",
+			"color_code": "#8B0000"
+		  },  
+		  {
+			"color_name": "darksalmon",
+			"color_code": "#E9967A"
+		  },
+		  {
+			"color_name": "darkslateblue",
+			"color_code": "#483D8B"
+		  },
+		  {
+			"color_name": "darkviolet",
+			"color_code": "#9400D3"
+		  }]
+    , "product_size": {
+		"Width": 5,
+		"Height": 28,
+		"Depth": 52
+	  },
+    "product_description": "Sequestrectomy, tarsals and metatarsals",
+    "product_price": "67.84",
+    "product_materials": "Shoes"
+  },
+  {
+    "id": 6,
+    "product_name": "non dui",
+			"product_colors": [{
+			"color_name": "dodgerblue",
+			"color_code": "#1E90FF"
+		  },
+		  {
+			"color_name": "firebrick",
+			"color_code": "#B22222"
+		  }]
+    , "product_size": {
+		"Width": 5,
+		"Height": 30,
+		"Depth": 24
+	  },
+    "product_description": "Monitoring of cardiac output by oxygen consumption technique",
+    "product_price": "45.18",
+    "product_materials": "Games"
+  },
+  {
+    "id": 7,
+    "product_name": "erat vivamus",
+			"product_colors": [{
+			"color_name": "firebrick",
+			"color_code": "#B22222"
+		  },
+		  {
+			"color_name": "gold",
+			"color_code": "#FFD700"
+		  }]
+    , "product_size": 1987,
+    "product_description": "Osteoclasis, tarsals and metatarsals",
+    "product_price": "34.79",
+    "product_materials": "Movies"
+  },
+  {
+    "id": 8,
+    "product_name": "elementum sem",
+    "product_colors": [{
+    "color_name": "goldenrod",
+    "color_code": "#DAA520"
+  },
+  {
+    "color_name": "indianred",
+    "color_code": "#CD5C5C"
+  },
+  {
+    "color_name": "lightcoral",
+    "color_code": "#F08080"
+  }]
+    , "product_size": {
+    "Width": 7,
+    "Height": 25,
+    "Depth": 30
+  },
+    "product_description": "Visual field study",
+    "product_price": "16.76",
+    "product_materials": "Toys"
+  },
+  {
+    "id": 9,
+    "product_name": "molestie orci",
+    "product_colors": [{
+    "color_name": "lightsalmon",
+    "color_code": "#FFA07A"
+  }]
+    , "product_size": {
+    "Width": 8,
+    "Height": 23,
+    "Depth": 39
+  },
+    "product_description": "Other craniectomy",
+    "product_price": "40.47",
+    "product_materials": "Home"
+  },
+  {
+    "id": 10,
+    "product_name": "adipiscing elit",
+    "product_colors": [{
+    "color_name": "sandybrown",
+    "color_code": "#F4A460"
+  },
+  {
+    "color_name": "sienna",
+    "color_code": "#A0522D"
+  }]
+    , "product_size": {
+    "Width": 8,
+    "Height": 23,
+    "Depth": 58
+  },
+    "product_description": "Biopsy of bone, tarsals and metatarsals",
+    "product_price": "67.86",
+    "product_materials": "Jewelery"
+  }
+]
+
+
+ [ 
+  {
+    "id": 11,
+    "product_name": "eleifend vitae",
+    "product_colors": [{"color_name": "green", "color_code":"#008000"}]
+    , "product_size": 1997,
+    "product_description": "Microscopic examination of specimen from ear, nose, throat, and larynx, parasitology",
+    "product_price": "90.23",
+    "product_materials": "Automotive"
+  },
+  {
+    "id": 12,
+    "product_name": "pellentesque tincidunt",
+    "product_colors": [{"color_name": "green", "color_code":"#008000"}]
+    , "product_size": 2008,
+    "product_description": "Other operations on cranial and peripheral nerves",
+    "product_price": "72.74",
+    "product_materials": "Baby"
+  },
+  {
+    "id": 13,
+    "product_name": "diam vel",
+    "product_colors": [{"color_name": "green", "color_code":"#008000"}]
+    , "product_size": 2001,
+    "product_description": "Temporomandibular contrast arthrogram",
+    "product_price": "21.46",
+    "product_materials": "Outdoors"
+  },
+  {
+    "id": 14,
+    "product_name": "molestie tellus",
+    "product_colors": [{"color_name": "green", "color_code":"#008000"}]
+    , "product_size": 1992,
+    "product_description": "Removal of sutures from thorax",
+    "product_price": "42.36",
+    "product_materials": "Home"
+  },
+  {
+    "id": 15,
+    "product_name": "lacinia vitae",
+    "product_colors": "Turquoise",
+    , "product_size": 1988,
+    "product_description": "Insertion of skull plate",
+    "product_price": "12.48",
+    "product_materials": "Books"
+  },
+  {
+    "id": 16,
+    "product_name": "id ante",
+    "product_colors": "Goldenrod",
+    , "product_size": 1992,
+    "product_description": "Arthroscopy, foot and toe",
+    "product_price": "57.01",
+    "product_materials": "Clothing"
+  },
+  {
+    "id": 17,
+    "product_name": "pede cras",
+    "product_colors": "Puce",
+    , "product_size": 2002,
+    "product_description": "Biopsy of uvula and soft palate",
+    "product_price": "79.12",
+    "product_materials": "Music"
+  },
+  {
+    "id": 18,
+    "product_name": "tristique ac",
+    "product_colors": "Aquamarine",
+    , "product_size": 1996,
+    "product_description": "Other diagnostic procedures on liver",
+    "product_price": "34.21",
+    "product_materials": "Baby"
+  },
+  {
+    "id": 19,
+    "product_name": "amet ornare",
+    "product_colors": "Puce",
+    , "product_size": 1993,
+    "product_description": "Other incision of external ear",
+    "product_price": "34.52",
+    "product_materials": "Kids"
+  },
+  {
+    "id": 20,
+    "product_name": "quis accumsan",
+    "product_colors": "Teal",
+    , "product_size": 2004,
+    "product_description": "Excision of branchial cleft cyst or vestige",
+    "product_price": "11.19",
+    "product_materials": "Music"
+  }
+]
