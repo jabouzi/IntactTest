@@ -1,22 +1,23 @@
-[  
-   {  
+{"products":
+ [
+   {
       "id":1,
       "product_name":"eu eros",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"blue",
             "color_code":"#0000FF"
          },
-         {  
+         {
             "color_name":"brown",
             "color_code":"#A52A2A"
          },
-         {  
+         {
             "color_name":"chocolate",
             "color_code":"#D2691E"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":7,
          "Height":27,
          "Depth":43
@@ -25,20 +26,20 @@
       "product_price":"57.06",
       "product_materials":"Clothing"
    },
-   {  
+   {
       "id":2,
       "product_name":"lacus Etiam",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"color_name",
             "color_code":"color_code"
          },
-         {  
+         {
             "color_name":"coral",
             "color_code":"#FF7F50"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":8,
          "Height":20,
          "Depth":61
@@ -47,16 +48,16 @@
       "product_price":"42.28",
       "product_materials":"Toys"
    },
-   {  
+   {
       "id":3,
       "product_name":"nibh vulputate",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"cornflowerblue",
             "color_code":"#6495ED"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":1,
          "Height":29,
          "Depth":28
@@ -65,59 +66,54 @@
       "product_price":"33.94",
       "product_materials":"Beauty"
    },
-   {  
+   {
       "id":4,
       "product_name":"aenean eget",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"crimson",
             "color_code":"#DC143C"
          },
-         {  
+         {
             "color_name":"darkblue",
             "color_code":"#00008B"
          },
-         {  
+         {
             "color_name":"darkorange",
             "color_code":"#FF8C00"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":1,
          "Height":20,
          "Depth":41
       },
       "product_description":"Extracorporeal shockwave lithotripsy of other sites",
       "product_price":"77.76",
-      "product_materials":[  
-         {  
-            "color_name":"green",
-            "color_code":"#008000"
-         }
-      ]
+      "product_materials":"Leather"
    },
-   {  
+   {
       "id":5,
       "product_name":"elit Aliquam",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"darkred",
             "color_code":"#8B0000"
          },
-         {  
+         {
             "color_name":"darksalmon",
             "color_code":"#E9967A"
          },
-         {  
+         {
             "color_name":"darkslateblue",
             "color_code":"#483D8B"
          },
-         {  
+         {
             "color_name":"darkviolet",
             "color_code":"#9400D3"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":5,
          "Height":28,
          "Depth":52
@@ -126,20 +122,20 @@
       "product_price":"67.84",
       "product_materials":"Shoes"
    },
-   {  
+   {
       "id":6,
       "product_name":"non dui",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"dodgerblue",
             "color_code":"#1E90FF"
          },
-         {  
+         {
             "color_name":"firebrick",
             "color_code":"#B22222"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":5,
          "Height":30,
          "Depth":24
@@ -148,42 +144,46 @@
       "product_price":"45.18",
       "product_materials":"Games"
    },
-   {  
+   {
       "id":7,
       "product_name":"erat vivamus",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"firebrick",
             "color_code":"#B22222"
          },
-         {  
+         {
             "color_name":"gold",
             "color_code":"#FFD700"
          }
       ],
-      "product_size":1987,
+      "product_size":{
+         "Width":15,
+         "Height":5,
+         "Depth":34
+      },
       "product_description":"Osteoclasis, tarsals and metatarsals",
       "product_price":"34.79",
       "product_materials":"Movies"
    },
-   {  
+   {
       "id":8,
       "product_name":"elementum sem",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"goldenrod",
             "color_code":"#DAA520"
          },
-         {  
+         {
             "color_name":"indianred",
             "color_code":"#CD5C5C"
          },
-         {  
+         {
             "color_name":"lightcoral",
             "color_code":"#F08080"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":7,
          "Height":25,
          "Depth":30
@@ -192,16 +192,16 @@
       "product_price":"16.76",
       "product_materials":"Toys"
    },
-   {  
+   {
       "id":9,
       "product_name":"molestie orci",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"lightsalmon",
             "color_code":"#FFA07A"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":8,
          "Height":23,
          "Depth":39
@@ -210,20 +210,20 @@
       "product_price":"40.47",
       "product_materials":"Home"
    },
-   {  
+   {
       "id":10,
       "product_name":"adipiscing elit",
-      "product_colors":[  
-         {  
+      "product_colors":[
+         {
             "color_name":"sandybrown",
             "color_code":"#F4A460"
          },
-         {  
+         {
             "color_name":"sienna",
             "color_code":"#A0522D"
          }
       ],
-      "product_size":{  
+      "product_size":{
          "Width":8,
          "Height":23,
          "Depth":58
@@ -233,3 +233,4 @@
       "product_materials":"Jewelery"
    }
 ]
+}

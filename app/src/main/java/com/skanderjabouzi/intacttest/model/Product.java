@@ -85,4 +85,16 @@ public class Product {
         this.productMaterials = productMaterials;
     }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", productName='" + productName + '\'' +
+                ", productColors=" + productColors +
+                ", productSize=" + productSize +
+                ", productDescription='" + productDescription + '\'' +
+                ", productPrice='" + productPrice + '\'' +
+                ", productMaterials='" + productMaterials + '\'' +
+                '}';
+    }
 }

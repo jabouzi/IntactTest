@@ -29,4 +29,11 @@ public class ProductColor {
         this.colorCode = colorCode;
     }
 
+    @Override
+    public String toString() {
+        return "ProductColor{" +
+                "colorName='" + colorName + '\'' +
+                ", colorCode='" + colorCode + '\'' +
+                '}';
+    }
 }

@@ -40,4 +40,12 @@ public class ProductSize {
         this.depth = depth;
     }
 
+    @Override
+    public String toString() {
+        return "ProductSize{" +
+                "width='" + width + '\'' +
+                ", height='" + height + '\'' +
+                ", depth='" + depth + '\'' +
+                '}';
+    }
 }
