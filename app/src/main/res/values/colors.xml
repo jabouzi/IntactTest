@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#209873</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="ColorCatalogList">#d9d9d9</color>
+    <color name="ColorWishList">#efeff4</color>
+    <color name="ColorButton">#ff001d</color>
+    <color name="ColorShippingText">#209873</color>
+    <color name="ColorProductText">#6c6c6c</color>
 </resources>

@@ -15,8 +15,8 @@ public class Products {
         return products;
     }
 
-    public void setProducts(List<Product> capitals) {
-        this.products = capitals;
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 
 }
