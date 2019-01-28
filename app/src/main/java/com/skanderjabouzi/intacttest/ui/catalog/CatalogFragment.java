@@ -1,57 +1,39 @@
 package com.skanderjabouzi.intacttest.ui.catalog;
 
 
+import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.skanderjabouzi.intacttest.R;
 import com.skanderjabouzi.intacttest.adapter.CatalogListAdapter;
-import com.skanderjabouzi.intacttest.app.CatalogApp;
 import com.skanderjabouzi.intacttest.databinding.FragmentCatalogBinding;
+import com.skanderjabouzi.intacttest.event.CatalogEvents;
+import com.skanderjabouzi.intacttest.event.GlobalBus;
 import com.skanderjabouzi.intacttest.helper.RecyclerViewItemClickListener;
-import com.skanderjabouzi.intacttest.model.Products;
-
-import java.io.IOException;
-import java.io.InputStream;
-
+import com.skanderjabouzi.intacttest.ui.main.ProductDetailActivity;
 
 public class CatalogFragment extends Fragment implements CatalogView, RecyclerViewItemClickListener {
-
 
     CatalogListAdapter adapter;
     FragmentCatalogBinding binding;
     CatalogPresenter catalogPresenter;
 
-    public CatalogFragment() {
-//        catalogPresenter = new CatalogPresenter(this, getContext());
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_catalog, container, false);
-        return view;
+        binding =  DataBindingUtil.inflate(getLayoutInflater(), R.layout.fragment_catalog, container, false);
+        return binding.getRoot();
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        binding = FragmentCatalogBinding.inflate(getLayoutInflater());
-        getActivity().setContentView(binding.getRoot());
         catalogPresenter = new CatalogPresenter(this, getContext());
         catalogPresenter.setCatalog();
-    }
-
-    @Override
-    public void setupRecyclerView() {
-//        binding.catalogRV.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
     @Override
@@ -63,6 +45,8 @@ public class CatalogFragment extends Fragment implements CatalogView, RecyclerVi
 
     @Override
     public void onItemClick(View view, int position) {
-        Log.e("PRODUCT", String.valueOf(position));
+        GlobalBus.getBus().postSticky(new CatalogEvents.ProductEvent("ShowProductDetail", this.adapter.getItem(position)));
+        Intent intent = new Intent(getActivity(), ProductDetailActivity.class);
+        getActivity().startActivity(intent);
     }
 }

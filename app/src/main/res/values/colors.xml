@@ -8,4 +8,5 @@
     <color name="ColorButton">#ff001d</color>
     <color name="ColorShippingText">#209873</color>
     <color name="ColorProductText">#6c6c6c</color>
+    <color name="ColorProductDetailsText">#000000</color>
 </resources>

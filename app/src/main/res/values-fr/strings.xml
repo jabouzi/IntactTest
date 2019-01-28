@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Intact Test App</string>
     <string name="toolbar_title">TASCH</string>
-    <string name="catalog_title">Product Catalogue</string>
+    <string name="catalog_title">Product Catalog</string>
     <string name="wishlist_title">Your wish list</string>
     <string name="wishlist_total">Total %1$d</string>
     <string name="free_shipping">Free shipping world wide</string>
-    <string name="language_iso_639_2_code">eng</string>
-    <string name="language_iso_639_1_code">en</string>
-    <string name="language_name">english</string>
-    <string name="language_code">1</string>
+    <string name="language_iso_639_2_code">fra</string>
+    <string name="language_iso_639_1_code">fr</string>
+    <string name="language_name">français</string>
+    <string name="language_code">2</string>
 </resources>

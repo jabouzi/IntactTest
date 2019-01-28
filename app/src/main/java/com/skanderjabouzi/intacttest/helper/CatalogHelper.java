@@ -41,7 +41,6 @@ public class CatalogHelper {
             is.read(buffer);
             is.close();
             json = new String(buffer, "UTF-8");
-            Log.e("JSON", json);
         } catch (IOException e) {
             Log.e("CatalogHelper", e.getMessage(), e);
             if (observer != null)
