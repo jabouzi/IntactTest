@@ -62,13 +62,13 @@ public class ProductDetailActivity extends AppCompatActivity implements ProductD
     }
 
     @Override
-    public void showProductDescription() {
-
+    public void showProductDescription(String description) {
+        binding.productDetails.productDescription.setText(description);
     }
 
     @Override
     public void showProductPrice(Double price) {
-//        binding.productDetails.productPrice.setText(DecoratorHelper.formatCurrency(price));
+        binding.productDetails.productPrice.setText(DecoratorHelper.formatCurrency(price));
     }
 
     @Override

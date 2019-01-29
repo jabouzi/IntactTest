@@ -4,7 +4,12 @@
     <string name="catalog_title">Product Catalogue</string>
     <string name="wishlist_title">Your wish list</string>
     <string name="wishlist_total">Total %1$d</string>
+    <string name="product_color_title">Colors</string>
+    <string name="product_dimension_title">Size</string>
+    <string name="product_rate">Product Rate</string>
     <string name="free_shipping">Free shipping world wide</string>
+    <string name="add_to_widhlist">Add to wishlist</string>
+    <string name="remove_from_widhlist">Remove from wishlist</string>
     <string name="language_iso_639_2_code">eng</string>
     <string name="language_iso_639_1_code">en</string>
     <string name="language_name">english</string>

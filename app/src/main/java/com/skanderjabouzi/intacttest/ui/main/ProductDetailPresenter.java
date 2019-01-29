@@ -32,6 +32,7 @@ public class ProductDetailPresenter {
             productDetailView.showProductTitle(product.getProductName());
             productDetailView.showProductImage("img"+product.getId());
             productDetailView.showProductPrice(Double.valueOf(product.getProductPrice()));
+            productDetailView.showProductDescription(product.getProductDescription());
         }
     }
 }
