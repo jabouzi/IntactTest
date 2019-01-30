@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 public class CatalogApp extends Application {
     private static Context appContext;
-    public static ArrayList<Product> wishList = new ArrayList<Product>();
 
     @Override
     public void onCreate() {

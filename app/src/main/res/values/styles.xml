@@ -34,4 +34,9 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="rateButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
 </resources>

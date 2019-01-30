@@ -6,12 +6,17 @@
     <string name="wishlist_total">Total %1$d</string>
     <string name="product_color_title">Colors</string>
     <string name="product_dimension_title">Size</string>
-    <string name="product_rate">Product Rate</string>
+    <string name="product_rate">Rate\nthe product</string>
     <string name="free_shipping">Free shipping world wide</string>
     <string name="add_to_widhlist">Add to wishlist</string>
-    <string name="remove_from_widhlist">Remove from wishlist</string>
+    <string name="remove_from_wishlist">Remove from wishlist</string>
+    <string name="checkout">Proceed to checkout</string>
+    <string name="wish_list_empty">Your Wish List is Empty</string>
     <string name="language_iso_639_2_code">eng</string>
     <string name="language_iso_639_1_code">en</string>
     <string name="language_name">english</string>
     <string name="language_code">1</string>
+    <string name="height">H</string>
+    <string name="width">W</string>
+    <string name="depth">D</string>
 </resources>

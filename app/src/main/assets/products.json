@@ -24,16 +24,13 @@
       },
       "product_description":"Open and other replacement of unspecified heart valve",
       "product_price":"57.06",
-      "product_materials":"Clothing"
+      "product_materials":"Clothing",
+      "product_quantity":100
    },
    {
       "id":2,
       "product_name":"lacus Etiam",
       "product_colors":[
-         {
-            "color_name":"color_name",
-            "color_code":"color_code"
-         },
          {
             "color_name":"coral",
             "color_code":"#FF7F50"
@@ -46,7 +43,8 @@
       },
       "product_description":"Diagnostic procedures on bone, not elsewhere classified, carpals and metacarpals",
       "product_price":"42.28",
-      "product_materials":"Toys"
+      "product_materials":"Toys",
+      "product_quantity":10
    },
    {
       "id":3,
@@ -64,7 +62,8 @@
       },
       "product_description":"Transplant from live related donor",
       "product_price":"33.94",
-      "product_materials":"Beauty"
+      "product_materials":"Beauty",
+      "product_quantity":0
    },
    {
       "id":4,
@@ -90,7 +89,8 @@
       },
       "product_description":"Extracorporeal shockwave lithotripsy of other sites",
       "product_price":"77.76",
-      "product_materials":"Leather"
+      "product_materials":"Leather",
+      "product_quantity":77
    },
    {
       "id":5,
@@ -120,7 +120,8 @@
       },
       "product_description":"Sequestrectomy, tarsals and metatarsals",
       "product_price":"67.84",
-      "product_materials":"Shoes"
+      "product_materials":"Shoes",
+      "product_quantity":22
    },
    {
       "id":6,
@@ -142,7 +143,8 @@
       },
       "product_description":"Monitoring of cardiac output by oxygen consumption technique",
       "product_price":"45.18",
-      "product_materials":"Games"
+      "product_materials":"Games",
+      "product_quantity":0
    },
    {
       "id":7,
@@ -164,7 +166,8 @@
       },
       "product_description":"Osteoclasis, tarsals and metatarsals",
       "product_price":"34.79",
-      "product_materials":"Movies"
+      "product_materials":"Movies",
+      "product_quantity":5
    },
    {
       "id":8,
@@ -190,7 +193,8 @@
       },
       "product_description":"Visual field study",
       "product_price":"16.76",
-      "product_materials":"Toys"
+      "product_materials":"Toys",
+      "product_quantity":34
    },
    {
       "id":9,
@@ -208,7 +212,8 @@
       },
       "product_description":"Other craniectomy",
       "product_price":"40.47",
-      "product_materials":"Home"
+      "product_materials":"Home",
+      "product_quantity":21
    },
    {
       "id":10,
@@ -230,7 +235,8 @@
       },
       "product_description":"Biopsy of bone, tarsals and metatarsals",
       "product_price":"67.86",
-      "product_materials":"Jewelery"
+      "product_materials":"Jewelery",
+      "product_quantity":55
    }
 ]
 }

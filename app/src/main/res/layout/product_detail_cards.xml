@@ -103,7 +103,7 @@
                         android:layout_marginTop="16dp"
                         android:text="@string/product_color_title"
                         android:textColor="@color/ColorProductDetailsText"
-                        android:textSize="12sp"
+                        android:textSize="20dp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/productDescription" />
@@ -112,10 +112,10 @@
                         android:id="@+id/productColors"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="64dp"
-                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
                         android:orientation="horizontal"
-                        app:layout_constraintBaseline_toBaselineOf="@+id/productColorsTitle"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
                         app:layout_constraintStart_toEndOf="@+id/productColorsTitle"
                         app:layout_constraintTop_toBottomOf="@+id/productDescription"></android.support.v7.widget.RecyclerView>
 
@@ -127,10 +127,10 @@
                         android:layout_marginTop="16dp"
                         android:text="@string/product_dimension_title"
                         android:textColor="@color/ColorProductDetailsText"
-                        android:textSize="12sp"
+                        android:textSize="20dp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/productColorsTitle" />
+                        app:layout_constraintTop_toBottomOf="@+id/productColors" />
 
                     <TextView
                         android:id="@+id/productDimensions"
@@ -138,11 +138,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="64dp"
                         android:layout_marginTop="16dp"
+                        android:layout_marginBottom="24dp"
                         android:text="@string/product_dimension_title"
                         android:textColor="@color/ColorProductDetailsText"
-                        android:textSize="12sp"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/productDimTitle"
-                        app:layout_constraintTop_toBottomOf="@+id/productColorsTitle" />
+                        app:layout_constraintTop_toBottomOf="@+id/productColors" />
 
 
                 </android.support.constraint.ConstraintLayout>
@@ -151,8 +153,7 @@
 
         </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        <android.support.v7.widget.CardView
             android:id="@+id/list_item_container2"
             style="@style/CardView.Light"
             android:layout_width="match_parent"
@@ -161,12 +162,12 @@
             android:layout_marginTop="0dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="4dp"
-            card_view:cardUseCompatPadding="true">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
 
             <android.support.constraint.ConstraintLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
@@ -174,18 +175,70 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
                     android:text="@string/product_rate"
                     android:textColor="@color/ColorProductDetailsText"
-                    android:textSize="12sp"
+                    android:textSize="18dp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/productRate"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@android:color/white">
+
+                    <Button
+                        style="@style/rateButton"
+                        android:id="@+id/star1"
+                        android:onClick="onStarClicked"
+                        android:tag="1"
+                        android:background="@mipmap/star_grey"/>
+
+                    <Button
+                        style="@style/rateButton"
+                        android:id="@+id/star2"
+                        android:onClick="onStarClicked"
+                        android:tag="2"
+                        android:background="@mipmap/star_grey"/>
+
+                    <Button
+                        style="@style/rateButton"
+                        android:id="@+id/star3"
+                        android:onClick="onStarClicked"
+                        android:tag="3"
+                        android:background="@mipmap/star_grey"/>
+
+                    <Button
+                        style="@style/rateButton"
+                        android:id="@+id/star4"
+                        android:onClick="onStarClicked"
+                        android:tag="4"
+                        android:background="@mipmap/star_grey"/>
+
+                    <Button
+                        style="@style/rateButton"
+                        android:id="@+id/star5"
+                        android:onClick="onStarClicked"
+                        android:tag="5"
+                        android:background="@mipmap/star_grey"/>
+
+                </LinearLayout>
 
             </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/add2WishLit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
@@ -194,6 +247,7 @@
             android:background="@color/ColorButton"
             android:textStyle="bold"
             android:text="@string/add_to_widhlist"
-            tools:text="Add to wish list"/>
+            tools:text="Add to wish list"
+            android:onClick="onToggleWishList"/>
     </LinearLayout>
 </layout>

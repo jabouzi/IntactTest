@@ -10,24 +10,38 @@ public class Product {
     @SerializedName("id")
     @Expose
     private Integer id;
+
     @SerializedName("product_name")
     @Expose
     private String productName;
+
     @SerializedName("product_colors")
     @Expose
     private List<ProductColor> productColors = null;
+
     @SerializedName("product_size")
     @Expose
     private ProductSize productSize;
+
     @SerializedName("product_description")
     @Expose
     private String productDescription;
+
     @SerializedName("product_price")
     @Expose
     private String productPrice;
+
     @SerializedName("product_materials")
     @Expose
     private String productMaterials;
+
+    @SerializedName("product_quantity")
+    @Expose
+    private Integer productQuantity;
+
+    private int productRate;
+
+    private boolean inWishList = false;
 
     public Integer getId() {
         return id;
@@ -85,6 +99,31 @@ public class Product {
         this.productMaterials = productMaterials;
     }
 
+    public Integer getProductQuantity() {
+        return productQuantity;
+    }
+
+    public void setProductQuantity(Integer productQuantity) {
+        this.productQuantity = productQuantity;
+    }
+
+    public int getProductRate() {
+        return productRate;
+    }
+
+    public void setProductRate(int productRate) {
+        this.productRate = productRate;
+    }
+
+    public boolean isInWishList() {
+        return inWishList;
+    }
+
+    public void setInWishList(boolean inWishList) {
+        this.inWishList = inWishList;
+    }
+
+
     @Override
     public String toString() {
         return "Product{" +
@@ -95,6 +134,9 @@ public class Product {
                 ", productDescription='" + productDescription + '\'' +
                 ", productPrice='" + productPrice + '\'' +
                 ", productMaterials='" + productMaterials + '\'' +
+                ", productQuantity='" + productQuantity + '\'' +
+                ", productRate='" + productRate + '\'' +
+                ", inWishList='" + inWishList + '\'' +
                 '}';
     }
 }

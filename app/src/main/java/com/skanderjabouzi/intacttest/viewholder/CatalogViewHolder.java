@@ -3,6 +3,7 @@ package com.skanderjabouzi.intacttest.viewholder;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import com.skanderjabouzi.intacttest.databinding.CatalogCardBinding;
@@ -30,9 +31,8 @@ public class CatalogViewHolder extends RecyclerView.ViewHolder implements View.O
             InputStream inputStream = context.getAssets().open(imageString+".jpg");
             Drawable drawable = Drawable.createFromStream(inputStream, null);
             binding.productImage.setImageDrawable(drawable);
-
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.e("CatalogViewHolder", e.getLocalizedMessage());
         }
     }
 
