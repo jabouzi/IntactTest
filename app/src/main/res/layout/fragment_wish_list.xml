@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/wishListLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/ColorWishList"
-        tools:context=".ui.wishList.WishListFragment">
+        tools:context=".ui.wishlist.WishListFragment">
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/wishList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="visible">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/wishListTitle"
@@ -44,7 +50,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:background="@android:color/white"
+                android:background="@color/ColorWishList"
                 android:orientation="vertical"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -62,11 +68,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/wishlistRV" />
 
             <TextView
-                android:id="@+id/productPrice"
+                android:id="@+id/wishListSubTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="$250"
+                android:text="@string/wishlist_subtotal"
                 android:textColor="@color/ColorProductDetailsText"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -83,9 +89,9 @@
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/productPrice" />
+                app:layout_constraintTop_toBottomOf="@+id/wishListSubTotal" />
 
-            <android.support.v7.widget.AppCompatButton
+            <Button
                 android:id="@+id/goToCart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -93,7 +99,6 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="40dp"
                 android:background="@color/ColorButton"
-                android:onClick="onGoToCart"
                 android:text="@string/checkout"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
@@ -107,9 +112,13 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/wishListEmpty"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone">
-
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="618dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/errorMessage"
@@ -119,6 +128,7 @@
                 android:text="@string/wish_list_empty"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

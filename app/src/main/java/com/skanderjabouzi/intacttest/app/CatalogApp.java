@@ -2,8 +2,6 @@ package com.skanderjabouzi.intacttest.app;
 
 import android.app.Application;
 import android.content.Context;
-import com.skanderjabouzi.intacttest.model.Product;
-import java.util.ArrayList;
 
 public class CatalogApp extends Application {
     private static Context appContext;

@@ -7,7 +7,7 @@ public interface ProductDetailView {
     void showProductImage(String imageString);
     void showProductTitle(String title);
     void showProductDescription(String description);
-    void showProductPrice(Double price);
+    void showProductPrice(String price);
     void showProductColorAttributes(ProductColorAdapter adapter);
     void showProductSizeAttributes(String sizes);
     void setProductRate(List<Integer> rates);

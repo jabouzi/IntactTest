@@ -1,4 +1,3 @@
-
 package com.skanderjabouzi.intacttest.model;
 
 import com.google.gson.annotations.Expose;

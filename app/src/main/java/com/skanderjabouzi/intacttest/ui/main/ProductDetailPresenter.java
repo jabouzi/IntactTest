@@ -7,6 +7,7 @@ import com.skanderjabouzi.intacttest.adapter.ProductColorAdapter;
 import com.skanderjabouzi.intacttest.dao.CatalogData;
 import com.skanderjabouzi.intacttest.event.CatalogEvents;
 import com.skanderjabouzi.intacttest.event.GlobalBus;
+import com.skanderjabouzi.intacttest.helper.DecoratorHelper;
 import com.skanderjabouzi.intacttest.model.Product;
 import com.skanderjabouzi.intacttest.model.ProductColor;
 import com.skanderjabouzi.intacttest.model.ProductSize;
@@ -48,7 +49,7 @@ public class ProductDetailPresenter {
     public void initViews() {
         productDetailView.showProductTitle(product.getProductName());
         productDetailView.showProductImage("img"+product.getId());
-        productDetailView.showProductPrice(Double.valueOf(product.getProductPrice()));
+        productDetailView.showProductPrice(DecoratorHelper.formatCurrency(Double.valueOf(product.getProductPrice())));
         productDetailView.showProductDescription(product.getProductDescription());
         productDetailView.showProductColorAttributes(getAdapter(product.getProductColors()));
         productDetailView.showProductSizeAttributes(getSize(product.getProductSize()));
@@ -89,11 +90,9 @@ public class ProductDetailPresenter {
 
     private void initWishListButton() {
         if (!CatalogData.isInWishList(product)) {
-            CatalogData.removeProductFromWishList(product);
             productDetailView.addToWishList(R.color.ColorButton, R.string.add_to_widhlist);
         }
         else {
-            CatalogData.addProductToWishList(product);
             productDetailView.addToWishList(R.color.ColorButtonWishList, R.string.remove_from_wishlist);
         }
     }

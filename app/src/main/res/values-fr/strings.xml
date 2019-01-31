@@ -3,7 +3,8 @@
     <string name="toolbar_title">TASCH</string>
     <string name="catalog_title">Product Catalog</string>
     <string name="wishlist_title">Your wish list</string>
-    <string name="wishlist_total">Total %1$d</string>
+    <string name="wishlist_total">Total %1$s</string>
+    <string name="wishlist_subtotal">Sub-Total %1$s</string>
     <string name="product_color_title">Colors</string>
     <string name="product_dimension_title">Size</string>
     <string name="product_rate">Rate\nthe product</string>
@@ -12,6 +13,12 @@
     <string name="remove_from_wishlist">Remove from wishlist</string>
     <string name="checkout">Proceed to checkout</string>
     <string name="wish_list_empty">Your Wish List is Empty</string>
+    <string name="added_to_wishlist">Product added to Wish List</string>
+    <string name="removed_from_wishlist">Product removed from Wish List</string>
+    <string name="out_of_stock">Out Of Stock</string>
+    <string name="checkout_message">Are you sure you want to proceed to checkout?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
     <string name="language_iso_639_2_code">fra</string>
     <string name="language_iso_639_1_code">fr</string>
     <string name="language_name">français</string>

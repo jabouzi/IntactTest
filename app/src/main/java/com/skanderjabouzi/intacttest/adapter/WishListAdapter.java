@@ -7,8 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.skanderjabouzi.intacttest.R;
+import com.skanderjabouzi.intacttest.helper.DecoratorHelper;
 import com.skanderjabouzi.intacttest.helper.RecyclerViewItemClickListener;
 import com.skanderjabouzi.intacttest.model.Product;
+import com.skanderjabouzi.intacttest.model.ProductColor;
 import com.skanderjabouzi.intacttest.viewholder.WishLIstViewHolder;
 
 import java.util.List;
@@ -27,7 +29,7 @@ public class WishListAdapter extends RecyclerView.Adapter<WishLIstViewHolder> {
 
     @Override
     public WishLIstViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = mInflater.inflate(R.layout.catalog_card, parent, false);
+        View view = mInflater.inflate(R.layout.wish_list_card, parent, false);
         return new WishLIstViewHolder(view, context);
     }
 
@@ -36,6 +38,14 @@ public class WishListAdapter extends RecyclerView.Adapter<WishLIstViewHolder> {
         Product product = products.get(position);
         holder.setProductImage("img"+product.getId());
         holder.setProductTitle(product.getProductName());
+        holder.setProductDescription(product.getProductDescription());
+        holder.setProductMaterial(product.getProductMaterials());
+        holder.setProductPrice(DecoratorHelper.formatCurrency(Double.valueOf(product.getProductPrice())));
+        if (product.getProductQuantity() == 0) {
+            holder.setProductOutOfStock();
+        } else {
+            holder.setProductColors(getAdapter(product.getProductColors()));
+        }
         holder.setClickListener(mClickListener);
     }
 
@@ -50,5 +60,9 @@ public class WishListAdapter extends RecyclerView.Adapter<WishLIstViewHolder> {
 
     public void setClickListener(RecyclerViewItemClickListener itemClickListener) {
         this.mClickListener = itemClickListener;
+    }
+
+    private ProductColorAdapter getAdapter(List<ProductColor> colors) {
+        return new ProductColorAdapter(this.context, colors);
     }
 }

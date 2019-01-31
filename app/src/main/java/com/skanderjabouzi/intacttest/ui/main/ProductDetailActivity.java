@@ -11,11 +11,9 @@ import android.widget.Button;
 import com.skanderjabouzi.intacttest.R;
 import com.skanderjabouzi.intacttest.adapter.ProductColorAdapter;
 import com.skanderjabouzi.intacttest.databinding.ActivityProductDetailBinding;
-import com.skanderjabouzi.intacttest.helper.DecoratorHelper;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.List;
 
 import static com.skanderjabouzi.intacttest.app.CatalogApp.getContext;
@@ -75,8 +73,8 @@ public class ProductDetailActivity extends AppCompatActivity implements ProductD
     }
 
     @Override
-    public void showProductPrice(Double price) {
-        binding.productDetails.productPrice.setText(DecoratorHelper.formatCurrency(price));
+    public void showProductPrice(String price) {
+        binding.productDetails.productPrice.setText(price);
     }
 
     @Override

@@ -1,4 +1,3 @@
-
 package com.skanderjabouzi.intacttest.model;
 
 import java.util.List;
